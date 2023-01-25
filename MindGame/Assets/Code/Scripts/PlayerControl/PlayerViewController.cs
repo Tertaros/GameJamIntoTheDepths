@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class PlayerViewController : MonoBehaviour
 {
-    private Camera m_charactorCamera;
+    public Camera CharactorCamera { get; private set; }
 
     [Header("Parameters")]
     public float m_rotateSpeed;
@@ -17,12 +17,12 @@ public class PlayerViewController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        m_charactorCamera = GetComponentInChildren<Camera>();
-        if (!m_charactorCamera)
+        CharactorCamera = GetComponentInChildren<Camera>();
+        if (!CharactorCamera)
         {
             Debug.LogError("Charactor camera is not assigned! ");
         }
-        m_refCameraPos = m_charactorCamera.transform.position - transform.position;
+        m_refCameraPos = CharactorCamera.transform.position - transform.position;
 
         Cursor.visible = false;
         Cursor.lockState = CursorLockMode.Locked;
@@ -37,8 +37,8 @@ public class PlayerViewController : MonoBehaviour
         m_rotationUpDown -= mouseRotation.y;
         m_rotationUpDown = Mathf.Clamp(m_rotationUpDown, -89.9f, 89.9f);
         m_rotationLeftRight += mouseRotation.x;
-        m_charactorCamera.transform.localRotation = Quaternion.Euler(m_rotationUpDown, 0, 0);
-        m_charactorCamera.transform.position = transform.position + m_refCameraPos;
+        CharactorCamera.transform.localRotation = Quaternion.Euler(m_rotationUpDown, 0, 0);
+        CharactorCamera.transform.position = transform.position + m_refCameraPos;
 
         transform.rotation = Quaternion.Euler(0, m_rotationLeftRight, 0);
     }

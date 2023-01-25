@@ -11,12 +11,12 @@ public class PlayerMovementController : MonoBehaviour
     public float m_fallForce = 2f;
 
     // Delegates and Events
-    public delegate void AnimationTriggerEventHandler();
+    public delegate void EnterStateEventHandler();
 
-    public event AnimationTriggerEventHandler m_eventStand;
-    public event AnimationTriggerEventHandler m_eventCrouch;
-    public event AnimationTriggerEventHandler m_eventProne;
-    public event AnimationTriggerEventHandler m_eventJump;
+    public event EnterStateEventHandler m_eventStand;
+    public event EnterStateEventHandler m_eventCrouch;
+    public event EnterStateEventHandler m_eventProne;
+    public event EnterStateEventHandler m_eventJump;
 
     public bool IsGrounded { get; private set; }
 
