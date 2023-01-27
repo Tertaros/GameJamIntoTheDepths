@@ -93,6 +93,8 @@ public class PlayerMovementController : MonoBehaviour
     {
         float vertical = Input.GetAxis("Vertical");
         float horizontal = Input.GetAxis("Horizontal");
+        m_animator.SetFloat("Horizontal", horizontal);
+        m_animator.SetFloat("Vertical", vertical);
 
         Vector3 direction = new Vector3(horizontal, 0.0f, vertical).normalized;
 
@@ -105,6 +107,7 @@ public class PlayerMovementController : MonoBehaviour
             }
             transform.position = transform.position + movement * Time.deltaTime * speed;
         }
+
     }
 
     public void Jump()
