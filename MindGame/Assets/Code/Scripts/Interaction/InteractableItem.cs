@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+[RequireComponent(typeof(BoxCollider))]
 public class InteractableItem : MonoBehaviour
 {
     public ShortTextItem m_shortTextItem { get; private set; }
