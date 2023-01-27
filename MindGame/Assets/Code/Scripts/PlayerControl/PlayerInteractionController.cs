@@ -27,6 +27,8 @@ public class PlayerInteractionController : MonoBehaviour
     public InspectableEventHandler m_eventInteractWithInspectable;
     public CollectableEventHandler m_eventInteractWithCollectable;
 
+    private Animator m_animator;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -61,6 +63,9 @@ public class PlayerInteractionController : MonoBehaviour
         {
             m_eventInteractWithCollectable += m_inventory.AddToInventory;
         }
+        m_animator = gameObject.GetComponent<Animator>();
+        if (!m_animator)
+            Debug.LogError("Animator not found");
     }
 
     // Update is called once per frame
@@ -132,6 +137,7 @@ public class PlayerInteractionController : MonoBehaviour
         // Collectable
         if (interactable.m_collectableItem)
         {
+            m_animator.SetTrigger("Grab");
             m_eventInteractWithCollectable?.Invoke(interactable.m_collectableItem);
         }
     }
