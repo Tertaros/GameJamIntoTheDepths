@@ -12,6 +12,9 @@ GameObject:
   - component: {fileID: 1673293460456834149}
   - component: {fileID: 3520773398388240559}
   - component: {fileID: 1364926398755573508}
+  - component: {fileID: 7529879877744108262}
+  - component: {fileID: 3262815353488248118}
+  - component: {fileID: 958379649473145850}
   m_Layer: 0
   m_Name: Old Keyboard
   m_TagString: Untagged
@@ -98,3 +101,41 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 3802121804940291127, guid: 2eeece6b09550364fb45b8217b6ab93d, type: 3}
+--- !u!114 &7529879877744108262
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3160595311542194554}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1e52b51a55b6fb147aac01a8d373e5ca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_shortText: Keyboard
+--- !u!65 &3262815353488248118
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3160595311542194554}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.5772761, y: 0.04306088, z: 0.2753804}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &958379649473145850
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3160595311542194554}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 620a159efae44d046879b1d456c12061, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

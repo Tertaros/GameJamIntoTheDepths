@@ -12,7 +12,10 @@ GameObject:
   - component: {fileID: 5345944730298929490}
   - component: {fileID: 7914068237162522008}
   - component: {fileID: 569745726067366844}
-  m_Layer: 0
+  - component: {fileID: 7845923937530607871}
+  - component: {fileID: 7942295578504413472}
+  - component: {fileID: 6937431551484228428}
+  m_Layer: 7
   m_Name: Blue Vase
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -93,8 +96,46 @@ MeshCollider:
   m_GameObject: {fileID: 8562635168419513421}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 4
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: -4209267338809986769, guid: 824c8db400013dd4bb682dbbe289f48a, type: 3}
+--- !u!114 &7845923937530607871
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8562635168419513421}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1e52b51a55b6fb147aac01a8d373e5ca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_shortText: 
+--- !u!65 &7942295578504413472
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8562635168419513421}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.201483, y: 0.29447156, z: 0.201483}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &6937431551484228428
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8562635168419513421}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 620a159efae44d046879b1d456c12061, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
