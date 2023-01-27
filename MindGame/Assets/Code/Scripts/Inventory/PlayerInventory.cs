@@ -9,8 +9,10 @@ public class PlayerInventory : MonoBehaviour
     public Vector3 m_whereToPutInventoryItems;
 
     // Delegates and events;
-    public delegate void InventoryContentUpdateEventHandler(ref CollectableItem[] items);
+    public delegate void InventoryContentUpdateEventHandler(CollectableItem[] items);
     public InventoryContentUpdateEventHandler m_eventOnContentChanged;
+
+    public CollectableItem[] Items { get => m_items; }
 
     private CollectableItem[] m_items = new CollectableItem[4];
     private int m_curIdxSlot;
@@ -44,7 +46,7 @@ public class PlayerInventory : MonoBehaviour
         item.OnCollected();
         item.gameObject.transform.position = m_whereToPutInventoryItems;
 
-        m_eventOnContentChanged?.Invoke(ref m_items);
+        m_eventOnContentChanged?.Invoke(m_items);
     }
 
     public void ClearInventory()
@@ -55,6 +57,6 @@ public class PlayerInventory : MonoBehaviour
         }
         m_curIdxSlot = 0;
 
-        m_eventOnContentChanged?.Invoke(ref m_items);
+        m_eventOnContentChanged?.Invoke(m_items);
     }
 }

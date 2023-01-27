@@ -26,7 +26,7 @@ public class UIInventoryController : MonoBehaviour
         
     }
 
-    public void UpdateInventory(ref CollectableItem[] items)
+    public void UpdateInventory(CollectableItem[] items)
     {
         for (int idx = 0; idx < 4; ++idx)
         {

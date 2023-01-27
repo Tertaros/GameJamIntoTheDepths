@@ -10,6 +10,7 @@ public class UIInteractionController : MonoBehaviour
     public string m_textInspect;
     public string m_textCollect;
     public string m_textInspectAndCollect;
+    public string m_textInteract;
     public TMPro.TMP_Text m_tmProShortText;
     public UIMenuInspectionController m_uiMenuInspectionController;
 
@@ -38,6 +39,8 @@ public class UIInteractionController : MonoBehaviour
 
     public void EnableInteractText(InteractableItem item)
     {
+        bool enable = true;
+
         if(item.m_inspectableItem && item.m_collectableItem)
         {
             m_tmProInteract.text = m_textInspectAndCollect;
@@ -50,12 +53,23 @@ public class UIInteractionController : MonoBehaviour
         {
             m_tmProInteract.text = m_textCollect;
         }
+        else if(item.m_triggerableItem)
+        {
+            if(item.m_triggerableItem.IsTriggerable())
+            {
+                m_tmProInteract.text = m_textInteract;
+            }
+            else
+            {
+                enable = false;
+            }
+        }
         else
         {
-            m_tmProInteract.enabled = false;
-            return;
+            enable = false;
         }
-        m_tmProInteract.enabled = true;
+
+        m_tmProInteract.enabled = enable;
     }
 
     public void DisableInteractText()

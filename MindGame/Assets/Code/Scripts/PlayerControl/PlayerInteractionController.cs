@@ -140,5 +140,11 @@ public class PlayerInteractionController : MonoBehaviour
             m_animator.SetTrigger("Grab");
             m_eventInteractWithCollectable?.Invoke(interactable.m_collectableItem);
         }
+
+        // Triggerable
+        if (interactable.m_triggerableItem)
+        {
+            interactable.m_triggerableItem.Trigger(m_inventory.Items);
+        }
     }
 }
