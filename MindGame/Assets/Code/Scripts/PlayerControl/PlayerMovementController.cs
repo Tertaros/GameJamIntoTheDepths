@@ -26,6 +26,8 @@ public class PlayerMovementController : MonoBehaviour
     private float m_colliderOriginalHeight;
     private StateMachine m_stateMachine;
 
+    private Animator m_animator;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -48,6 +50,10 @@ public class PlayerMovementController : MonoBehaviour
         {
             m_colliderOriginalHeight = m_collider.height;
         }
+
+        m_animator = gameObject.GetComponent<Animator>();
+        if (!m_animator)
+            Debug.LogError("Animator not found");
     }
 
     // Update is called once per frame
