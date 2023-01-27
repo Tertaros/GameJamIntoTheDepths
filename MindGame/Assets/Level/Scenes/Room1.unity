@@ -1314,6 +1314,7 @@ MonoBehaviour:
   m_textInspect: (E) to inspect
   m_textCollect: (E) to collect
   m_textInspectAndCollect: (E) to inspect & collect
+  m_textInteract: 
   m_tmProShortText: {fileID: 1818535641}
   m_uiMenuInspectionController: {fileID: 1352392415}
 --- !u!4 &138639671 stripped
@@ -4510,6 +4511,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 9052032928935698167, guid: 134227e2bfcd30b4aad974d008a937a0, type: 3}
   m_PrefabInstance: {fileID: 1466554101}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &572435821 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 30119347845477643, guid: b69aac29372e92f4db307eb5fec8c95a, type: 3}
+  m_PrefabInstance: {fileID: 1433988006}
+  m_PrefabAsset: {fileID: 0}
 --- !u!43 &579670350
 Mesh:
   m_ObjectHideFlags: 0
@@ -6362,7 +6368,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh27854
+  m_Name: pb_Mesh29120
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -8091,6 +8097,31 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 801871423873380273, guid: b69aac29372e92f4db307eb5fec8c95a, type: 3}
   m_PrefabInstance: {fileID: 1433988006}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &982896542
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 572435821}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1e52b51a55b6fb147aac01a8d373e5ca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_shortText: Camera
+--- !u!114 &982896543
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 572435821}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 620a159efae44d046879b1d456c12061, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &987210522
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8886,7 +8917,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-2720
+  m_Name: pb_Mesh-3422
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -12502,6 +12533,82 @@ Mesh:
     offset: 0
     size: 0
     path: 
+--- !u!1 &1377696588
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1377696589}
+  - component: {fileID: 1377696591}
+  - component: {fileID: 1377696590}
+  m_Layer: 5
+  m_Name: CenterPoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1377696589
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1377696588}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.2, y: 0.2, z: 0.2}
+  m_ConstrainProportionsScale: 1
+  m_Children: []
+  m_Father: {fileID: 1825614824}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1377696590
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1377696588}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 10913, guid: 0000000000000000f000000000000000, type: 0}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &1377696591
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1377696588}
+  m_CullTransparentMesh: 1
 --- !u!43 &1378489557
 Mesh:
   m_ObjectHideFlags: 0
@@ -13049,6 +13156,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: EAThe80_Prop_Camera_01a_PRE
       objectReference: {fileID: 0}
+    - target: {fileID: 30119347845477643, guid: b69aac29372e92f4db307eb5fec8c95a, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 801871423873380273, guid: b69aac29372e92f4db307eb5fec8c95a, type: 3}
       propertyPath: m_RootOrder
       value: 50
@@ -13092,6 +13203,18 @@ PrefabInstance:
     - target: {fileID: 801871423873380273, guid: b69aac29372e92f4db307eb5fec8c95a, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2569293805366723132, guid: b69aac29372e92f4db307eb5fec8c95a, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 4557604790172553206, guid: b69aac29372e92f4db307eb5fec8c95a, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 7188809912900347056, guid: b69aac29372e92f4db307eb5fec8c95a, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b69aac29372e92f4db307eb5fec8c95a, type: 3}
@@ -30727,6 +30850,7 @@ RectTransform:
   m_Children:
   - {fileID: 137791539}
   - {fileID: 1746023986}
+  - {fileID: 1377696589}
   m_Father: {fileID: 1467314754}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -32536,6 +32660,28 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 24c0ed6a224302a4a98a00ea1b3c45ca, type: 3}
+--- !u!114 &1995430992 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5369340884973890074, guid: 12ec3d9e2d2e0394f9e07e458a51a23c, type: 3}
+  m_PrefabInstance: {fileID: 1146116763393850858}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 97c2b0dfa7deb014e93fd67f08107c22, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1995430994 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6535196232625256186, guid: 12ec3d9e2d2e0394f9e07e458a51a23c, type: 3}
+  m_PrefabInstance: {fileID: 1146116763393850858}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 33e39e2e5f618784bbc8cfe7783f4636, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!43 &1995989780
 Mesh:
   m_ObjectHideFlags: 0
@@ -32711,7 +32857,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-3180
+  m_Name: pb_Mesh-3882
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -34768,11 +34914,11 @@ PrefabInstance:
     - target: {fileID: 8495224527034715531, guid: 12ec3d9e2d2e0394f9e07e458a51a23c, type: 3}
       propertyPath: m_inventory
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1995430994}
     - target: {fileID: 8495224527034715531, guid: 12ec3d9e2d2e0394f9e07e458a51a23c, type: 3}
       propertyPath: m_viewController
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1995430992}
     - target: {fileID: 8495224527034715531, guid: 12ec3d9e2d2e0394f9e07e458a51a23c, type: 3}
       propertyPath: m_uiInteractionController
       value: 
