@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 735027227909847664}
   - component: {fileID: 1736927150612620092}
   - component: {fileID: 6383771989295267558}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: EAThe80_Prop_TelescopeLegs_01a_LOD2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -28,6 +28,7 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -0.004306078, y: -0.49957034, z: -0.01685834}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 3447427061102275936}
   m_RootOrder: 1
@@ -51,6 +52,7 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -90,7 +92,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3447427061102275936}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Legs
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -107,6 +109,7 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0.004306078, y: 0.49957034, z: 0.01685834}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 5844570296542301735}
   - {fileID: 735027227909847664}
@@ -124,7 +127,9 @@ GameObject:
   m_Component:
   - component: {fileID: 5470610637501819581}
   - component: {fileID: 986742187771977164}
-  m_Layer: 0
+  - component: {fileID: 3326383896272980160}
+  - component: {fileID: 6988886685892221428}
+  m_Layer: 7
   m_Name: EAThe80_Prop_Telescope_01a_PRE
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -141,6 +146,7 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 6585078227159728000}
   - {fileID: 3447427061102275936}
@@ -177,6 +183,33 @@ LODGroup:
     - renderer: {fileID: 6383771989295267558}
     - renderer: {fileID: 1660682353288558571}
   m_Enabled: 1
+--- !u!65 &3326383896272980160
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4656814165144678407}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 0.99535584, z: 0.6683437}
+  m_Center: {x: -3.7203324e-11, y: 0.5072247, z: 0.03064704}
+--- !u!136 &6988886685892221428
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4656814165144678407}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.27
+  m_Height: 1.66
+  m_Direction: 2
+  m_Center: {x: 0.02, y: 1.17, z: -0.16}
 --- !u!1 &4849884287594912615
 GameObject:
   m_ObjectHideFlags: 0
@@ -191,7 +224,7 @@ GameObject:
   - component: {fileID: 2113858728}
   - component: {fileID: 8184212699068689126}
   - component: {fileID: 8198605035364330653}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: EAThe80_Prop_Telescope_01a_LOD2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -208,6 +241,7 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 6585078227159728000}
   m_RootOrder: 2
@@ -231,6 +265,7 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -312,7 +347,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6585078227159728000}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Luneta
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -329,6 +364,7 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0.0039999485, y: 1.092, z: 0.0019999743}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 8963491842420791828}
   - {fileID: 625605206269039604}
@@ -347,7 +383,10 @@ GameObject:
   - component: {fileID: 8963491842420791828}
   - component: {fileID: 3525635826635409936}
   - component: {fileID: 1364916220015332348}
-  m_Layer: 0
+  - component: {fileID: 2518195092978023734}
+  - component: {fileID: 2052679747971783982}
+  - component: {fileID: 2964162796208050016}
+  m_Layer: 7
   m_Name: EAThe80_Prop_Telescope_01a_LOD1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -364,6 +403,7 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 6585078227159728000}
   m_RootOrder: 0
@@ -387,6 +427,7 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -417,6 +458,44 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &2518195092978023734
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5978125813306491830}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.24710067, y: 0.68282586, z: 1.837506}
+  m_Center: {x: -0.024002748, y: 0.1310614, z: 0.10733967}
+--- !u!114 &2052679747971783982
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5978125813306491830}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 620a159efae44d046879b1d456c12061, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &2964162796208050016
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5978125813306491830}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1e52b51a55b6fb147aac01a8d373e5ca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_shortText: Telescope
 --- !u!1 &6453432371096843676
 GameObject:
   m_ObjectHideFlags: 0
@@ -428,7 +507,7 @@ GameObject:
   - component: {fileID: 625605206269039604}
   - component: {fileID: 8670192588839698635}
   - component: {fileID: 3742284870277322400}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: EAThe80_Prop_Telescope_01a_LOD0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -445,6 +524,7 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 6585078227159728000}
   m_RootOrder: 1
@@ -468,6 +548,7 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -512,7 +593,7 @@ GameObject:
   - component: {fileID: 2113858727}
   - component: {fileID: 7460354082245773653}
   - component: {fileID: 8271188813272663323}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: EAThe80_Prop_TelescopeLegs_01a_LOD0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -529,6 +610,7 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -0.004306078, y: -0.49957034, z: -0.01685834}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 3447427061102275936}
   m_RootOrder: 2
@@ -552,6 +634,7 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -635,7 +718,10 @@ GameObject:
   - component: {fileID: 5844570296542301735}
   - component: {fileID: 3210153072564110483}
   - component: {fileID: 2181838503837347254}
-  m_Layer: 0
+  - component: {fileID: 4530535473326613057}
+  - component: {fileID: 4646125121105031449}
+  - component: {fileID: 763348402377647624}
+  m_Layer: 7
   m_Name: EAThe80_Prop_TelescopeLegs_01a_LOD1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -652,6 +738,7 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -0.004306078, y: -0.49957034, z: -0.01685834}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 3447427061102275936}
   m_RootOrder: 0
@@ -675,6 +762,7 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -705,3 +793,41 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &4530535473326613057
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6881195535981859804}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1e52b51a55b6fb147aac01a8d373e5ca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_shortText: Telescope
+--- !u!65 &4646125121105031449
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6881195535981859804}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.936739, y: 1.1413277, z: 0.9280923}
+  m_Center: {x: 0.004306033, y: 0.5549322, z: 0.016858323}
+--- !u!114 &763348402377647624
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6881195535981859804}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 620a159efae44d046879b1d456c12061, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
