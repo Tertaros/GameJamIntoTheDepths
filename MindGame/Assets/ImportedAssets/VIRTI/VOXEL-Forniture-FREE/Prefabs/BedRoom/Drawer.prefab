@@ -98,6 +98,8 @@ GameObject:
   - component: {fileID: 4571500668151810666}
   - component: {fileID: 2399327098700424791}
   - component: {fileID: 3142055252190314601}
+  - component: {fileID: 5523138415003179735}
+  - component: {fileID: 4831698955536389226}
   m_Layer: 7
   m_Name: drawer3
   m_TagString: Untagged
@@ -209,6 +211,35 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_shortText: Lower Drawe Shelf
+--- !u!114 &5523138415003179735
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1188505287714918}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1d6630d0dc8fa014f918c85d24588e07, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_openDirectionLocal: {x: -1, y: 0, z: 0}
+  m_openDistance: 0.5
+  m_speed: 1
+--- !u!114 &4831698955536389226
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1188505287714918}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a5dd9d30643cfd940ba22469594a321d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_key: {fileID: 0}
+  m_retriggerable: 1
 --- !u!1 &1650398168333870
 GameObject:
   m_ObjectHideFlags: 0
@@ -223,6 +254,8 @@ GameObject:
   - component: {fileID: 6831828866495693064}
   - component: {fileID: 5820452256141711281}
   - component: {fileID: 7867927193110123655}
+  - component: {fileID: 7908890954784357827}
+  - component: {fileID: 8140495173051869434}
   m_Layer: 7
   m_Name: drawer1
   m_TagString: Untagged
@@ -334,6 +367,35 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_shortText: Upper Drawer Shelf
+--- !u!114 &7908890954784357827
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1650398168333870}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1d6630d0dc8fa014f918c85d24588e07, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_openDirectionLocal: {x: -1, y: 0, z: 0}
+  m_openDistance: 0.5
+  m_speed: 1
+--- !u!114 &8140495173051869434
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1650398168333870}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a5dd9d30643cfd940ba22469594a321d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_key: {fileID: 0}
+  m_retriggerable: 1
 --- !u!1 &1712670379287384
 GameObject:
   m_ObjectHideFlags: 0
@@ -383,6 +445,8 @@ GameObject:
   - component: {fileID: 1241206790292252313}
   - component: {fileID: 956399909555351139}
   - component: {fileID: 7082294394828187387}
+  - component: {fileID: 3496304582626192136}
+  - component: {fileID: 6090590160662754089}
   m_Layer: 7
   m_Name: drawer2
   m_TagString: Untagged
@@ -494,3 +558,32 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_shortText: Middle Drawer Shelft
+--- !u!114 &3496304582626192136
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1953202982667792}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1d6630d0dc8fa014f918c85d24588e07, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_openDirectionLocal: {x: -1, y: 0, z: 0}
+  m_openDistance: 0.5
+  m_speed: 1
+--- !u!114 &6090590160662754089
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1953202982667792}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a5dd9d30643cfd940ba22469594a321d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_key: {fileID: 0}
+  m_retriggerable: 1

@@ -42,4 +42,10 @@ public class PlayerViewController : MonoBehaviour
 
         transform.rotation = Quaternion.Euler(0, m_rotationLeftRight, 0);
     }
+
+    private void OnDestroy()
+    {
+        Cursor.visible = true;
+        Cursor.lockState = CursorLockMode.Confined;
+    }
 }

@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GameplayManager : MonoBehaviour
 {
@@ -18,6 +19,16 @@ public class GameplayManager : MonoBehaviour
         if(!s_instance)
         {
             s_instance = this;
+        }
+
+        DontDestroyOnLoad(gameObject);
+    }
+
+    private void Update()
+    {
+        if(Input.GetButtonDown("Quit"))
+        {
+            LoadMainMenu();
         }
     }
 
@@ -40,5 +51,20 @@ public class GameplayManager : MonoBehaviour
     public void ResumeGame()
     {
         Time.timeScale = 1.0f;
+    }
+
+    public void ExitGame()
+    {
+        Application.Quit();
+    }
+
+    public void LoadMainMenu()
+    {
+        SceneManager.LoadScene("MainMenu", LoadSceneMode.Single);
+    }
+
+    public void LoadRoom1()
+    {
+        SceneManager.LoadScene("Room1", LoadSceneMode.Single);
     }
 }
