@@ -72,4 +72,9 @@ public class GameplayManager : MonoBehaviour
     {
         SceneManager.LoadScene("Photo", LoadSceneMode.Single);
     }
+
+    public void LoadEndScene()
+    {
+        SceneManager.LoadScene("EndScene", LoadSceneMode.Single);
+    }
 }

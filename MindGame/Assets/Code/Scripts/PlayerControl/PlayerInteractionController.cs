@@ -48,6 +48,9 @@ public class PlayerInteractionController : MonoBehaviour
 
             // Inspectable
             m_eventInteractWithInspectable += m_uiInteractionController.OnInteractWithInspectable;
+
+
+            m_uiInteractionController.m_uiMenuInspectionController.m_eventOnInspectionEnd += CheckInventoryToEndGame;
         }
 
         if (m_viewController == null)
@@ -145,6 +148,14 @@ public class PlayerInteractionController : MonoBehaviour
         if (interactable.m_triggerableItem)
         {
             interactable.m_triggerableItem.Trigger(m_inventory.Items);
+        }
+    }
+
+    public void CheckInventoryToEndGame()
+    {
+        if(m_inventory.CheckInventoryFull())
+        {
+            GameplayManager.Instance.LoadEndScene();
         }
     }
 }

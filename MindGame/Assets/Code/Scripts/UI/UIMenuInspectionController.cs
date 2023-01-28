@@ -8,6 +8,9 @@ public class UIMenuInspectionController : UISingleLayerMenuController
     [Header("Parameters")]
     public Image m_itemImage;
 
+    public delegate void OnInspectionEndEventHandler();
+    public OnInspectionEndEventHandler m_eventOnInspectionEnd;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -22,6 +25,7 @@ public class UIMenuInspectionController : UISingleLayerMenuController
         if(Input.GetButtonDown("Interact"))
         {
             Disable();
+            m_eventOnInspectionEnd?.Invoke();
         }
     }
 

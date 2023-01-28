@@ -10,7 +10,9 @@ public class PlayerInventory : MonoBehaviour
 
     // Delegates and events;
     public delegate void InventoryContentUpdateEventHandler(CollectableItem[] items);
+    public delegate void InventoryContentFullEventHandler();
     public InventoryContentUpdateEventHandler m_eventOnContentChanged;
+    public InventoryContentFullEventHandler m_eventOnContentFull;
 
     public CollectableItem[] Items { get => m_items; }
 
@@ -47,6 +49,21 @@ public class PlayerInventory : MonoBehaviour
         item.gameObject.transform.position = m_whereToPutInventoryItems;
 
         m_eventOnContentChanged?.Invoke(m_items);
+
+        if(CheckInventoryFull())
+        {
+            m_eventOnContentFull?.Invoke();
+        }
+    }
+
+    public bool CheckInventoryFull()
+    {
+        for (int i = 0; i < m_items.Length; ++i)
+        {
+            if (m_items[i] == null)
+                return false;
+        }
+        return true;
     }
 
     public void ClearInventory()
