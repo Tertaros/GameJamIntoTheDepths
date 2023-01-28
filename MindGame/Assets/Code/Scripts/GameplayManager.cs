@@ -26,7 +26,7 @@ public class GameplayManager : MonoBehaviour
 
     private void Update()
     {
-        if(Input.GetButtonDown("Quit"))
+        if(Input.GetButtonDown("Cancel"))
         {
             LoadMainMenu();
         }
