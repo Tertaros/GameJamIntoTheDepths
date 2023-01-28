@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 4922016052017438}
   - component: {fileID: 33653371603103838}
   - component: {fileID: 23866430886501612}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: stalk
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -28,6 +28,7 @@ Transform:
   m_LocalRotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
   m_LocalPosition: {x: -0, y: 0.52500004, z: 0}
   m_LocalScale: {x: 100, y: 100, z: 100}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 4332728075842834}
   m_RootOrder: 1
@@ -51,10 +52,12 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -79,6 +82,7 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
 --- !u!1 &1344336540292762
 GameObject:
   m_ObjectHideFlags: 0
@@ -88,7 +92,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4332728075842834}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Flower2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -105,6 +109,7 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 4624575115045972}
   - {fileID: 4922016052017438}
@@ -123,7 +128,10 @@ GameObject:
   - component: {fileID: 4707755582825068}
   - component: {fileID: 33210151495159714}
   - component: {fileID: 23059323031863176}
-  m_Layer: 0
+  - component: {fileID: 2935187111688556926}
+  - component: {fileID: 7885937913894562990}
+  - component: {fileID: 7233780670819921613}
+  m_Layer: 7
   m_Name: vase
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -140,6 +148,7 @@ Transform:
   m_LocalRotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
   m_LocalPosition: {x: -0, y: 0, z: 0}
   m_LocalScale: {x: 100, y: 100, z: 100}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 4332728075842834}
   m_RootOrder: 2
@@ -163,10 +172,12 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -192,6 +203,45 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &2935187111688556926
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1406332737988766}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.007800002, y: 0.0078000007, z: 0.006749999}
+  m_Center: {x: -2.3283062e-10, y: -9.313223e-10, z: 0.0033749994}
+--- !u!114 &7885937913894562990
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1406332737988766}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 620a159efae44d046879b1d456c12061, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &7233780670819921613
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1406332737988766}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1e52b51a55b6fb147aac01a8d373e5ca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_shortText: Plant Pot
 --- !u!1 &1976754435233334
 GameObject:
   m_ObjectHideFlags: 0
@@ -203,7 +253,10 @@ GameObject:
   - component: {fileID: 4624575115045972}
   - component: {fileID: 33210860469189318}
   - component: {fileID: 23350414798858106}
-  m_Layer: 0
+  - component: {fileID: 9085841798892192654}
+  - component: {fileID: 3483116464949041594}
+  - component: {fileID: 315849859424847959}
+  m_Layer: 7
   m_Name: flower2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -220,6 +273,7 @@ Transform:
   m_LocalRotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
   m_LocalPosition: {x: -0, y: 0.9749999, z: 0}
   m_LocalScale: {x: 100, y: 100, z: 100}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 4332728075842834}
   m_RootOrder: 0
@@ -243,10 +297,12 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -271,3 +327,42 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &9085841798892192654
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1976754435233334}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.0015875999, y: 0.0015875997, z: 0.0029999993}
+  m_Center: {x: 0, y: -0.000000014901161, z: 0.0014999997}
+--- !u!114 &3483116464949041594
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1976754435233334}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 620a159efae44d046879b1d456c12061, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &315849859424847959
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1976754435233334}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1e52b51a55b6fb147aac01a8d373e5ca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_shortText: Flower

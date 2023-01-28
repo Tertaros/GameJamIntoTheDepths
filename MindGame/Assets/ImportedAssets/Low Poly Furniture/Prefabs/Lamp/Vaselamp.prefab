@@ -11,8 +11,10 @@ GameObject:
   - component: {fileID: 945802796813659440}
   - component: {fileID: 4219856584557798037}
   - component: {fileID: 2119795185154643551}
-  - component: {fileID: 3949329315539860956}
-  m_Layer: 0
+  - component: {fileID: 9011467584898149001}
+  - component: {fileID: 8709504832112629429}
+  - component: {fileID: 989199739735872616}
+  m_Layer: 7
   m_Name: Vaselamp
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -84,8 +86,8 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &3949329315539860956
-MeshCollider:
+--- !u!65 &9011467584898149001
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -94,7 +96,31 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: -7765760263358164503, guid: 2c4eec42cfc85c749be391e82aceb875, type: 3}
+  serializedVersion: 2
+  m_Size: {x: 0.17, y: 0.2972637, z: 0.14}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &8709504832112629429
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 462738322240206730}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 620a159efae44d046879b1d456c12061, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &989199739735872616
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 462738322240206730}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1e52b51a55b6fb147aac01a8d373e5ca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_shortText: Vaselamp

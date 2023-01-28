@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 2066466356826364579}
   - component: {fileID: 111967845664716900}
   - component: {fileID: 7187831028704820133}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: ClosetKnopLeft
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2301,7 +2301,7 @@ GameObject:
   - component: {fileID: 2702508537989927310}
   - component: {fileID: 6344219305400353016}
   - component: {fileID: 8634682610090292352}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: ClosetKnopRight
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4583,7 +4583,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2782413069846153999}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: ClosetStand
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4623,7 +4623,7 @@ GameObject:
   - component: {fileID: 9059187223122274932}
   - component: {fileID: 6666616208084175597}
   - component: {fileID: 13160881655655931}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: ClosetStandFrontRight
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4967,7 +4967,7 @@ GameObject:
   - component: {fileID: 585835208713195510}
   - component: {fileID: 504918664274395288}
   - component: {fileID: 1934697237153627057}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: ClosetStandFrontLeft
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5311,7 +5311,7 @@ GameObject:
   - component: {fileID: 3617946067193611325}
   - component: {fileID: 9222200525972751383}
   - component: {fileID: 4619411934480166844}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: ClosetStandBackRight
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5655,7 +5655,7 @@ GameObject:
   - component: {fileID: 8281691266639011169}
   - component: {fileID: 5101583311533345454}
   - component: {fileID: 1530219611071572851}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: ClosetFront1Right
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6240,7 +6240,7 @@ GameObject:
   - component: {fileID: 2910513601248203354}
   - component: {fileID: 4756308864336027574}
   - component: {fileID: 5035683250136139928}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Closet1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6829,7 +6829,7 @@ GameObject:
   - component: {fileID: 6300001952412970398}
   - component: {fileID: 4387943742399876377}
   - component: {fileID: 8916592671357788286}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: ClosetFront1Left
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7414,7 +7414,7 @@ GameObject:
   - component: {fileID: 7797205223418855874}
   - component: {fileID: 7415226603263756460}
   - component: {fileID: 2703932070643196679}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: ClosetStandBackLeft
   m_TagString: Untagged
   m_Icon: {fileID: 0}
