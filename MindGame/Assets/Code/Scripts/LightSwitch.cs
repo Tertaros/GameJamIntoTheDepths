@@ -7,14 +7,24 @@ public class LightSwitch : MonoBehaviour
     public GameObject lightSource;
     public bool isActivated = false;
     public CheckOrderScript checkOrderScript;
-
-    public void OnMouseDown()
+    public GameObject player;
+ 
+    void Update()
     {
-        if (!isActivated)
+        if(Vector3.Distance(transform.position, player.transform.position) < 2.75)
         {
-            isActivated = true;
-            lightSource.SetActive(true);
-            checkOrderScript.CheckOrder(switchIndex);
+            if (Input.GetKeyDown(KeyCode.E))
+            {
+                if (!isActivated)
+                {
+                    isActivated = true;
+                    lightSource.SetActive(true);
+                    Debug.Log(lightSource.name);
+                    checkOrderScript.CheckOrder(switchIndex);
+                    Debug.Log(switchIndex);
+                }
+            }
         }
+
     }
 }
