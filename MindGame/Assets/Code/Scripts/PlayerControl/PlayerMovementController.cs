@@ -27,6 +27,7 @@ public class PlayerMovementController : MonoBehaviour
     private StateMachine m_stateMachine;
 
     private Animator m_animator;
+    private AudioSource m_footstep;
 
     // Start is called before the first frame update
     void Start()
@@ -54,6 +55,10 @@ public class PlayerMovementController : MonoBehaviour
         m_animator = gameObject.GetComponent<Animator>();
         if (!m_animator)
             Debug.LogError("Animator not found");
+
+        m_footstep = gameObject.GetComponent<AudioSource>();
+        if (!m_footstep)
+            Debug.LogError("Footstep sound not found");
     }
 
     // Update is called once per frame
@@ -106,8 +111,11 @@ public class PlayerMovementController : MonoBehaviour
                 movement.Normalize();
             }
             transform.position = transform.position + movement * Time.deltaTime * speed;
+            if (!m_footstep.isPlaying)
+                m_footstep.Play();
         }
-
+        else
+            m_footstep.Stop();
     }
 
     public void Jump()
