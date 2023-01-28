@@ -1,47 +1,54 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 
 public class CheckOrderScript : MonoBehaviour
 {
+    public int[] correctOrder = { 1, 2, 3 };
     public GameObject door;
-    private int[] correctOrder;
-    private int currentIndex;
+    public AudioSource open;
+    public AudioSource wrong;
+    private int[] playerOrder = { 0, 0, 0 };
+    private int currentIndex = 0;
+    private bool isOpen = false;
+    private GameObject[] switches;
 
     void Start()
     {
-        // Set the correct order of buttons here
-        correctOrder = new int[] { 1, 2, 3 };
-        currentIndex = 0;
     }
 
     public void CheckOrder(int switchIndex)
     {
-        if (switchIndex == correctOrder[currentIndex])
+        playerOrder[currentIndex] = switchIndex;
+        currentIndex++;
+
+        if (currentIndex == 3)
         {
-            currentIndex++;
-            if (currentIndex == correctOrder.Length)
+            if (playerOrder.SequenceEqual(correctOrder))
             {
-                // Correct order was entered
-                door.SetActive(false);
+                // Open the door
+                isOpen = true;
+                door.transform.Rotate(new Vector3(0, 90, 0));
+                Debug.Log("done");
+                open.Play();
+            }
+            else
+            {
+                // Reset the switches
                 currentIndex = 0;
-            }
-        }
-        else
-        {
-            // Incorrect order was entered
-            Debug.Log("Incorrect order!");
-            currentIndex = 0;
-            // reset all the light sources and switches
-            Light[] lights = FindObjectsOfType<Light>();
-            for (int i = 0; i < lights.Length; i++)
-            {
-                lights[i].gameObject.SetActive(false);
-            }
-            LightSwitch[] switches = FindObjectsOfType<LightSwitch>();
-            for (int i = 0; i < switches.Length; i++)
-            {
-                switches[i].isActivated = false;
+                for (int i = 0; i < playerOrder.Length; i++)
+                {
+                    playerOrder[i] = 0;
+                }
+                switches = GameObject.FindGameObjectsWithTag("Switch");
+                foreach (var item in switches)
+                {
+                    var comp = item.GetComponent<LightSwitch>();
+                    comp.isActivated = false;
+                    comp.lightSource.SetActive(false);
+                }
+                wrong.Play();
             }
         }
     }
