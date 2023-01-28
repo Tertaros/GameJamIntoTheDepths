@@ -14,10 +14,6 @@ public class CheckOrderScript : MonoBehaviour
     private bool isOpen = false;
     private GameObject[] switches;
 
-    void Start()
-    {
-    }
-
     public void CheckOrder(int switchIndex)
     {
         playerOrder[currentIndex] = switchIndex;
@@ -30,7 +26,6 @@ public class CheckOrderScript : MonoBehaviour
                 // Open the door
                 isOpen = true;
                 door.transform.Rotate(new Vector3(0, 90, 0));
-                Debug.Log("done");
                 open.Play();
             }
             else

@@ -8,7 +8,7 @@ public class DrawerController : MonoBehaviour
     public Vector3 m_openDirectionLocal = new Vector3(0,0,-1);
     public float m_openDistance = 0.5f;
     public float m_speed = 1;
-
+    public AudioSource m_moveSound;
     public Vector3 OrgPosition
     {
         get => m_orgPosition;
@@ -51,6 +51,7 @@ public class DrawerController : MonoBehaviour
                     m_opened = false;
                 }
             }
+            m_moveSound.Play();
         }
     }
 
