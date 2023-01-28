@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 5952398059450739900}
   - component: {fileID: 2999300495346758665}
   - component: {fileID: 224668351265742217}
+  - component: {fileID: 6820855084476153387}
   m_Layer: 0
   m_Name: PuzzlePiece
   m_TagString: Untagged
@@ -124,3 +125,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_shortText: Picture Piece
+--- !u!114 &6820855084476153387
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2280983635908095031}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 227f9ab45e53d9c4d8c20a7d1ce738bf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_itemIcon: {fileID: 21300000, guid: ed27ee84e9048ef4db751b556fbbd946, type: 3}
