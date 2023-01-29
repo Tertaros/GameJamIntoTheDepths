@@ -51,13 +51,13 @@ public class DrawerController : MonoBehaviour
                     m_opened = false;
                 }
             }
-            m_moveSound.Play();
         }
     }
 
     public void Interact()
     {
         m_moving = true;
+        m_moveSound.Play();
     }
 
     bool MoveTowards(Vector3 posOrg, Vector3 posTarg)

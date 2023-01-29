@@ -5,6 +5,9 @@ TagManager:
   serializedVersion: 2
   tags:
   - Switch
+  - enter
+  - up
+  - down
   layers:
   - Default
   - TransparentFX
