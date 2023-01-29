@@ -103,7 +103,6 @@ public class EndSceneController : MonoBehaviour
 
     private bool CheckEndScenePanelIsAbove()
     {
-        print(m_canvas.rect.height);
         if (m_panelEndScene.localPosition.y - m_panelEndScene.rect.height / 2.0f > m_canvas.rect.height / 2.0f)
         {
             return true;
