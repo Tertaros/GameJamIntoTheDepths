@@ -63,14 +63,14 @@ public class GameplayManager : MonoBehaviour
         SceneManager.LoadScene("MainMenu", LoadSceneMode.Single);
     }
 
+    public void LoadIntroScene()
+    {
+        SceneManager.LoadScene("IntroScene", LoadSceneMode.Single);
+    }
+
     public void LoadRoom1()
     {
         SceneManager.LoadScene("Room1", LoadSceneMode.Single);
-    }
-
-    public void LoadPhotoScene()
-    {
-        SceneManager.LoadScene("Photo", LoadSceneMode.Single);
     }
 
     public void LoadEndScene()
