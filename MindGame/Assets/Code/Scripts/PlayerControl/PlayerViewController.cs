@@ -35,7 +35,7 @@ public class PlayerViewController : MonoBehaviour
         Vector2 mouseRotation = currentMousePos * Time.deltaTime * m_rotateSpeed;
 
         m_rotationUpDown -= mouseRotation.y;
-        m_rotationUpDown = Mathf.Clamp(m_rotationUpDown, -30f, 40f);
+        m_rotationUpDown = Mathf.Clamp(m_rotationUpDown, -40f, 40f);
         m_rotationLeftRight += mouseRotation.x;
         CharactorCamera.transform.localRotation = Quaternion.Euler(m_rotationUpDown, 0, 0);
         CharactorCamera.transform.position = transform.position + m_refCameraPos;
